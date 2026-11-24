@@ -29,7 +29,8 @@ game_over = False
 # I need this variable out of the loop in order to not get it overwritten
 correct_letters = []
 
-# while game over is not True
+# To enter a while loop, we usually use a boolean variable that starts and true and should be shifted to False to exit the loop
+# Controlling the loop with the checks is a Good Practice. We should avoid using continue / exit, as the uses of this are very specific
 while not game_over:
 
     # TODO-6: - Update the code below to tell the user how many lives they have left.
@@ -49,6 +50,7 @@ while not game_over:
         if letter == guess:
             display += letter
             correct_letters.append(guess)
+        # if the letter is in the correct_letters and not in the actual guess, it should be printed to display
         elif letter in correct_letters:
             display += letter
         else:

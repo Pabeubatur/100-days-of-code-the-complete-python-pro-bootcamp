@@ -53,5 +53,3 @@ pattern_listed = string_to_list(not_patterned_string)
 
 randomised_list = randomise_pattern(pattern_listed)
 print(randomised_list)
-# random_pattern = randomise_pattern(pattern_listed)
-# print(pwd_letters + pwd_symbols + pwd_numbers)

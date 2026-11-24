@@ -27,6 +27,11 @@ scissors = '''
 ---.__(___)
 '''
 
+# the gist is: you win agains the lower and loose agains the upper.
+# paper (1) wins against rock (0), but loses agains scissors (2)
+# we have a problem with rock (0) and scissors (2).
+# rocks is defeated by paper (1), but scissors (2) are defeated by rocks. This is an exception we should address
+# scissors defeats papers 2 > paper (1). But It is defeater by rocks, althougs rocks (0) is lower than scissors (2). Second exception
 choices_list = [rock, paper, scissors]
 computer_choice = random.randint(0,2)
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
